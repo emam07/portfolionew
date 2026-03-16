@@ -27,8 +27,8 @@ const Technologies = () => {
             whileInView={{opacity:1,y:0}}
             initial={{opacity:0,y:-100}}
             transition={{duration:1}}
-             className="my-20 text-center text-4xl"> Technol
-                <span className=" text-neutral-500">ogies</span>
+             className="my-20 text-center text-4xl">Techn
+                <span className="text-neutral-500">ologies</span>
             </motion.h1>
             <motion.div 
             whileInView={{opacity:1,x:0}}

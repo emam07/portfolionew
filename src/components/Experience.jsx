@@ -9,8 +9,8 @@ const Experience = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 1.5 }}
-                className='my-20 text-center text-4xl'> Exper
-                <span className='text-neutral-500'>ience</span>
+                className='my-20 text-center text-4xl'>Expe
+                <span className='text-neutral-500'>rience</span>
             </motion.h2>
             <div>
                 {EXPERIENCES.map((experience, index) => (

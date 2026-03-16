@@ -1,19 +1,21 @@
-import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
+import notesVault from "../assets/projects/notes-vault.png";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 1 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, 
-as well as back-end technologies like Node.js, MySQL and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `Backend & infrastructure engineer building scalable real-time systems. Experienced with Kubernetes, streaming data pipelines, and blockchain infrastructure, focused on reliable and production-ready architectures.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 1 years of experience,
- I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, and MongoDB. 
- My journey in web development began with a deep curiosity for how websites are made, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. 
- I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions.
- Outside of coding, I enjoy playing Football, exploring new technologies, contributing to open-source projects and travelling as much as I can and see the world through my eyes.`;
+export const ABOUT_TEXT = `I'm a backend and infrastructure engineer focused on building scalable distributed systems. Over the past year, I've worked with modern web technologies like React, Next.js, and Node.js, while expanding into infrastructure, streaming data systems, and cloud-native deployments. I enjoy designing reliable backend architectures, optimizing performance, and building production-ready systems. Outside of work, I enjoy playing football, exploring new technologies, contributing to open-source projects, and traveling.`;
 
 export const EXPERIENCES = [
+  {
+    year: "2025 - Present",
+    role: "Software Engineer / Infrastructure Engineer",
+    company: "CLR3 (Startup)",
+    description: `Working on backend infrastructure and real-time data systems for blockchain-based applications. Focused on designing and optimizing scalable services, streaming pipelines, and reliable production deployments while collaborating with the team on system performance and architecture decisions.`,
+    technologies: ["Kubernetes", "Docker", "Rancher", "Kafka", "Redpanda", "Redis", "ClickHouse", "Grafana", "Loki", "Tempo", "CI/CD"],
+  },
   {
     year: "2024 - Present",
     role: "Coder",
@@ -33,12 +35,12 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image: project1,
+    title: "Notes Vault",
+    image: notesVault,
     description:
-      "A fully functional e-commerce(Clothing Brand) website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-    link:"#",
+      "A minimalistic yet powerful browser-based note-taking app with full CRUD, instant sync to localStorage, and dark/light mode toggle. Built with performance, scalability, and modern UI/UX principles.",
+    technologies: ["Next.js 14", "Tailwind CSS", "ShadCN/UI", "Framer Motion", "localStorage"],
+    link:"https://notes-vault-s42m.vercel.app/",
   },
   {
     title: "Shelter INN",
@@ -46,7 +48,7 @@ export const PROJECTS = [
     description:
       "An application for stray animals to have a shelter for medication, treatment and adoption.",
     technologies: ["HTML", "CSS", "Angular", "Javascript","React"],
-    link:"#",
+    link:"https://shelterinn.netlify.app",
   },
   {
     title: "Portfolio Website",
@@ -54,22 +56,22 @@ export const PROJECTS = [
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Tailwind"],
-    link:"#",
+    link:"https://portfolionew-wine.vercel.app/",
   },
   {
     title: "Real Time Facial Animation",
     image: project4,
     description:
-      "A Deep learnig project for real time implementing the expression on a still image using the python library(Pytorch,GAN,Computer Vision)",
-    technologies: ["python","Pandas","GAN"],
+      "A Deep learning project for real-time implementing expressions on a still image using Python libraries (Pytorch, GAN, Computer Vision).",
+    technologies: ["Python", "Pandas", "GAN", "PyTorch", "Computer Vision"],
     link:"#",
   },
   {
-    title: "Voting Dapp ",
+    title: "Voting Dapp",
     image: project5,
     description:
-      "A Smart contract application made in solidity to replicate the casting of vote in the country.",
-    technologies: ["React","Express","Solidity","HardHat"],
+      "A Smart contract application made in Solidity to replicate the casting of votes in elections.",
+    technologies: ["React", "Express", "Solidity", "HardHat"],
     link:"#",
   },
 ];
