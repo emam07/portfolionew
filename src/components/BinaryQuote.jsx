@@ -57,9 +57,9 @@ const BinaryQuote = () => {
         </p>
         <blockquote className="font-mono text-3xl font-thin leading-tight tracking-tight md:text-5xl">
           <span className="text-neutral-600">"</span>
-          I describe who I am
+          WE describe who we are
           <br />
-          in <span className="font-medium text-cyan-400">0</span>s and{" "}
+          with <span className="font-medium text-cyan-400">0</span>s and{" "}
           <span className="font-medium text-cyan-400">1</span>s
           <span className="text-neutral-600">."</span>
         </blockquote>
