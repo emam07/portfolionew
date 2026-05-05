@@ -3,18 +3,18 @@ import rentofluencerImg from "../assets/projects/project-2.png";
 import valochatImg from "../assets/projects/notes-vault.png";
 import nftMinterImg from "../assets/projects/project-6.png";
 
-export const HERO_CONTENT = `Backend engineer with 2+ years building real-time trading infrastructure and distributed systems. Currently leading a 6-person squad at NolimitNode shipping Kafka streaming pipelines, gRPC market-data services, and Kubernetes-based microservices in Rust and Python. I own systems end-to-end — from data ingestion to API to deployment.`;
+export const HERO_CONTENT = `Backend engineer with 2+ years building real-time trading infrastructure and distributed systems. Currently infra lead at NolimitNode shipping Kafka streaming pipelines, gRPC market-data services, and Kubernetes-based microservices in Rust and Python. I own systems end-to-end — from data ingestion to API to deployment.`;
 
-export const ABOUT_TEXT = `I am a backend engineer focused on distributed systems, real-time data pipelines, and production infrastructure. At NolimitNode I lead a 6-member backend squad delivering trading infrastructure — streaming pipelines in Rust, Python, and PyFlink on Kafka, gRPC services backed by Redis and ClickHouse, and a full Kubernetes-based microservices platform with Prometheus, Grafana, and ArgoCD.
+export const ABOUT_TEXT = `I am a backend engineer focused on distributed systems, real-time data pipelines, and production infrastructure. At NolimitNode I work on trading infrastructure as infra lead — streaming pipelines in Rust, Python, and PyFlink on Kafka, gRPC services backed by Redis and ClickHouse, and a full Kubernetes-based microservices platform with Prometheus, Grafana, and ArgoCD.
 
 Beyond my day job, I build things — CIForge (a CI attribution engine), Rentofluencer (a P2P gear rental marketplace I am founding), and other projects that scratch real itches. I care about systems that are observable, reliable, and fast. Outside of engineering, I play football, explore new infrastructure tooling, and travel whenever I can.`;
 
 export const EXPERIENCES = [
   {
     year: "Dec 2025 – Present",
-    role: "Backend Engineer (Tech Lead)",
+    role: "Backend Engineer · Infra Lead",
     company: "NolimitNode / Clr3 — Bangalore",
-    description: `Lead a 6-member backend squad delivering real-time market data and trading infrastructure. Built streaming pipelines in Rust, Python, and PyFlink on Kafka processing millions of events daily. Designed gRPC market-data services backed by Redis and ClickHouse for sub-second queries on high-cardinality time-series data. Shipped ez_wallet — backend services for orders, wallet operations, and settlement. Operate microservices on Kubernetes with Helm, ArgoCD, and full observability via Prometheus, Grafana, Loki, and Tempo. Powered a live trading strategy in production contributing to consistent positive PnL.`,
+    description: `Infra lead delivering real-time market data and trading infrastructure. Built streaming pipelines in Rust, Python, and PyFlink on Kafka processing millions of events daily. Designed gRPC market-data services backed by Redis and ClickHouse for sub-second queries on high-cardinality time-series data. Shipped ez_wallet — backend services for orders, wallet operations, and settlement. Operate microservices on Kubernetes with Helm, ArgoCD, and full observability via Prometheus, Grafana, Loki, and Tempo. Powered a live trading strategy in production contributing to consistent positive PnL.`,
     technologies: ["Rust", "Python", "Kafka", "gRPC", "Kubernetes", "ClickHouse", "Redis", "PostgreSQL"],
   },
   {
@@ -40,7 +40,7 @@ export const PROJECTS = [
     description:
       "CI failure attribution platform — ingests GitHub Actions events via a GitHub App and attributes test failures and flakiness back to the responsible change. Baseline + ranked attribution worker over a Postgres event store; webhook ingestion and worker pipeline shipped end-to-end.",
     technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "GitHub App"],
-    link: "https://github.com/emam07/CIForge",
+    link: "https://github.com/emam07/CI-Forge",
   },
   {
     title: "Rentofluencer",
@@ -69,7 +69,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "New Delhi, India",
+  address: "India",
   phoneNo: "+91 87388 78326",
   email: "emamulkhanmgs@gmail.com",
   linkedin: "https://www.linkedin.com/in/emamul-khan-872278235/",
