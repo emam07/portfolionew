@@ -5,6 +5,7 @@ import About from './components/About';
 import Technologies from './components/Technologies';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import BinaryQuote from './components/BinaryQuote';
 import BellRinger from './components/BellRinger';
 import Contacts from './components/Contact';
 
@@ -23,6 +24,7 @@ const App = () => {
         <Technologies />
         <Experience />
         <Projects/>
+        <BinaryQuote/>
         <BellRinger/>
         <Contacts/>
 
