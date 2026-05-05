@@ -20,19 +20,22 @@ const Hero = () => {
                     <motion.span variants={container(0.5)}
                         initial="hidden"
                         animate="visible"
-                        className="ml-9 mt-12 bg-gradient-to-r from-pink-300 via-slate-400 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">Full Stack Developer</motion.span>
+                        className="ml-9 mt-12 bg-gradient-to-r from-cyan-400 via-slate-300 to-blue-500 bg-clip-text text-4xl tracking-tight text-transparent">Backend Engineer · Distributed Systems</motion.span>
                     <motion.p variants={container(1)}
                         initial="hidden"
                         animate="visible"
                         className="ml-9 mt-6 text-justify font-light tracking-tighter">{HERO_CONTENT}</motion.p>
                 </div>
-                <div className="w-full lg:w-1/2 lg:p-8 bg-transparent">
-                    <div className="flex justify-center lg:justify-end">
-                        <motion.img variants
-                            initial={{x:100,opacity:0}}
-                            animate={{x:0,opacity:1}}
-                            transition={{duration:1,delay:1.2}}
-                            src={profilePic} alt="Emamul Khan" className="rounded-full w-64 h-64 lg:w-80 lg:h-80 object-cover object-top" />
+                <div className="w-full lg:w-1/3 lg:pl-32 bg-transparent">
+                    <div className="flex justify-end">
+                        <motion.img
+                        initial={{ x: 100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 1, delay: 1.2 }}
+                        src={profilePic}
+                        alt="image"
+                        className="object-cover rounded-full"
+                        />
                     </div>
                 </div>
             </div>

@@ -1,84 +1,76 @@
-import project2 from "../assets/projects/project-2.png";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
-import project5 from "../assets/projects/project-5.jpg";
-import notesVault from "../assets/projects/notes-vault.png";
+import ciforgeImg from "../assets/projects/project-7.png";
+import rentofluencerImg from "../assets/projects/project-2.png";
+import valochatImg from "../assets/projects/notes-vault.png";
+import nftMinterImg from "../assets/projects/project-6.png";
 
-export const HERO_CONTENT = `Backend & infrastructure engineer building scalable real-time systems. Experienced with Kubernetes, streaming data pipelines, and blockchain infrastructure, focused on reliable and production-ready architectures.`;
+export const HERO_CONTENT = `Backend engineer with 2+ years building real-time trading infrastructure and distributed systems. Currently leading a 6-person squad at NolimitNode shipping Kafka streaming pipelines, gRPC market-data services, and Kubernetes-based microservices in Rust and Python. I own systems end-to-end — from data ingestion to API to deployment.`;
 
-export const ABOUT_TEXT = `I'm a backend and infrastructure engineer focused on building scalable distributed systems. Over the past year, I've worked with modern web technologies like React, Next.js, and Node.js, while expanding into infrastructure, streaming data systems, and cloud-native deployments. I enjoy designing reliable backend architectures, optimizing performance, and building production-ready systems. Outside of work, I enjoy playing football, exploring new technologies, contributing to open-source projects, and traveling.`;
+export const ABOUT_TEXT = `I am a backend engineer focused on distributed systems, real-time data pipelines, and production infrastructure. At NolimitNode I lead a 6-member backend squad delivering trading infrastructure — streaming pipelines in Rust, Python, and PyFlink on Kafka, gRPC services backed by Redis and ClickHouse, and a full Kubernetes-based microservices platform with Prometheus, Grafana, and ArgoCD.
+
+Beyond my day job, I build things — CIForge (a CI attribution engine), Rentofluencer (a P2P gear rental marketplace I am founding), and other projects that scratch real itches. I care about systems that are observable, reliable, and fast. Outside of engineering, I play football, explore new infrastructure tooling, and travel whenever I can.`;
 
 export const EXPERIENCES = [
   {
-    year: "2025 - Present",
-    role: "Software Engineer / Infrastructure Engineer",
-    company: "CLR3 (Startup)",
-    description: `Working on backend infrastructure and real-time data systems for blockchain-based applications. Focused on designing and optimizing scalable services, streaming pipelines, and reliable production deployments while collaborating with the team on system performance and architecture decisions.`,
-    technologies: ["Kubernetes", "Docker", "Rancher", "Kafka", "Redpanda", "Redis", "ClickHouse", "Grafana", "Loki", "Tempo", "CI/CD"],
+    year: "Dec 2025 – Present",
+    role: "Backend Engineer (Tech Lead)",
+    company: "NolimitNode / Clr3 — Bangalore",
+    description: `Lead a 6-member backend squad delivering real-time market data and trading infrastructure. Built streaming pipelines in Rust, Python, and PyFlink on Kafka processing millions of events daily. Designed gRPC market-data services backed by Redis and ClickHouse for sub-second queries on high-cardinality time-series data. Shipped ez_wallet — backend services for orders, wallet operations, and settlement. Operate microservices on Kubernetes with Helm, ArgoCD, and full observability via Prometheus, Grafana, Loki, and Tempo. Powered a live trading strategy in production contributing to consistent positive PnL.`,
+    technologies: ["Rust", "Python", "Kafka", "gRPC", "Kubernetes", "ClickHouse", "Redis", "PostgreSQL"],
   },
   {
-    year: "2024 - Present",
-    role: "Coder",
-    company: "Cerebry Spark",
-    description: `Coding the doc of mathematical question using latex and maintaining the json files.`,
-    technologies: ["Javascript", "React.js", "Latex"],
-  },
-  {
-    year: "Oct-2022 - Dec-2022(internship)",
+    year: "Aug 2024 – Nov 2025",
     role: "Frontend Developer",
-    company: "Stirring minds",
-    description: `Designed and developed user interfaces for web applications using Html and React. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "React.js", "mySQL","Javascript"],
+    company: "Cerebry Spark — Noida (Remote)",
+    description: `Built reusable React.js components and responsive interfaces for an EdTech platform serving users across multiple markets. Deepened backend and systems skills in parallel before transitioning to a backend-focused role.`,
+    technologies: ["React.js", "JavaScript", "LaTeX", "Django"],
   },
-  
+  {
+    year: "Aug 2023 – Sep 2023",
+    role: "Web Development Intern",
+    company: "Stirring Minds — New Delhi",
+    description: `Built interactive web modules and frontend features using HTML, CSS, and JavaScript.`,
+    technologies: ["HTML", "CSS", "JavaScript", "React.js"],
+  },
 ];
 
 export const PROJECTS = [
   {
-    title: "Notes Vault",
-    image: notesVault,
+    title: "CIForge",
+    image: ciforgeImg,
     description:
-      "A minimalistic yet powerful browser-based note-taking app with full CRUD, instant sync to localStorage, and dark/light mode toggle. Built with performance, scalability, and modern UI/UX principles.",
-    technologies: ["Next.js 14", "Tailwind CSS", "ShadCN/UI", "Framer Motion", "localStorage"],
-    link:"https://notes-vault-s42m.vercel.app/",
+      "CI failure attribution platform — ingests GitHub Actions events via a GitHub App and attributes test failures and flakiness back to the responsible change. Baseline + ranked attribution worker over a Postgres event store; webhook ingestion and worker pipeline shipped end-to-end.",
+    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "GitHub App"],
+    link: "https://github.com/emam07/CIForge",
   },
   {
-    title: "Shelter INN",
-    image: project2,
+    title: "Rentofluencer",
+    image: rentofluencerImg,
     description:
-      "An application for stray animals to have a shelter for medication, treatment and adoption.",
-    technologies: ["HTML", "CSS", "Angular", "Javascript","React"],
-    link:"https://shelterinn.netlify.app",
+      "Founder and lead engineer of a P2P gear rental marketplace for Mumbai content creators — cameras, lenses, lighting, and accessories. Razorpay escrow payments, verified listings, talent marketplace, and CI/CD via GitHub Actions.",
+    technologies: ["Next.js", "Supabase", "Prisma", "Razorpay", "Vercel", "GitHub Actions"],
+    link: "https://rento-fluencer.vercel.app/",
   },
   {
-    title: "Portfolio Website",
-    image: project3,
+    title: "Valo-chat",
+    image: valochatImg,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Tailwind"],
-    link:"https://portfolionew-wine.vercel.app/",
+      "Real-time gaming chat with presence, rooms, and OAuth. Wires Stream Chat SDK, Supabase auth, and Google OAuth into a live messaging experience with channel management and user presence.",
+    technologies: ["React", "Stream Chat", "Supabase", "Google OAuth"],
+    link: "https://valo-chat.vercel.app/",
   },
   {
-    title: "Real Time Facial Animation",
-    image: project4,
+    title: "NFT Minter DApp",
+    image: nftMinterImg,
     description:
-      "A Deep learning project for real-time implementing expressions on a still image using Python libraries (Pytorch, GAN, Computer Vision).",
-    technologies: ["Python", "Pandas", "GAN", "PyTorch", "Computer Vision"],
-    link:"#",
-  },
-  {
-    title: "Voting Dapp",
-    image: project5,
-    description:
-      "A Smart contract application made in Solidity to replicate the casting of votes in elections.",
-    technologies: ["React", "Express", "Solidity", "HardHat"],
-    link:"#",
+      "ERC-721 minting application with smart contract deployment, MetaMask wallet integration, and React frontend deployed on Sepolia testnet via Hardhat.",
+    technologies: ["React", "Solidity", "Hardhat", "Ethers.js", "MetaMask"],
+    link: "https://github.com/emam07/NFT-minter",
   },
 ];
 
 export const CONTACT = {
-  address: "Johri Farm Noor Nagar New Delhi",
-  phoneNo: "8738878326",
+  address: "New Delhi, India",
+  phoneNo: "+91 87388 78326",
   email: "emamulkhanmgs@gmail.com",
-  linkedin:"https://www.linkedin.com/in/emamul-khan-872278235/"
+  linkedin: "https://www.linkedin.com/in/emamul-khan-872278235/",
 };
