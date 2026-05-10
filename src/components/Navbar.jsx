@@ -8,7 +8,6 @@ const Navbar = () => {
   return (
     <nav className='mb-20 flex items-center justify-between py-6'>
       <div className='flex flex-shrink-0 items-center'>
-        <span className='text-2xl font-bold'>EK</span>
       </div>
       <div className='m-9 flex items-center justify-center gap-9 text-2xl'>
         <a href="https://www.linkedin.com/in/emamul-khan-872278235/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

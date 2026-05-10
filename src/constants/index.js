@@ -1,7 +1,7 @@
-import ciforgeImg from "../assets/projects/project-7.png";
-import rentofluencerImg from "../assets/projects/project-2.png";
-import valochatImg from "../assets/projects/notes-vault.png";
-import nftMinterImg from "../assets/projects/project-6.png";
+import ciforgeImg from "../assets/projects/CI-forge.png";
+import rentofluencerImg from "../assets/projects/RentoFluencer.png";
+import valochatImg from "../assets/projects/Valo-chat.png";
+import tokenTrackerImg from "../assets/projects/Token-tracker.png";
 
 export const HERO_CONTENT = `Backend engineer with 2+ years building real-time trading infrastructure and distributed systems. Currently infra lead at NolimitNode shipping Kafka streaming pipelines, gRPC market-data services, and Kubernetes-based microservices in Rust and Python. I own systems end-to-end — from data ingestion to API to deployment.`;
 
@@ -59,12 +59,12 @@ export const PROJECTS = [
     link: "https://valo-chat.vercel.app/",
   },
   {
-    title: "NFT Minter DApp",
-    image: nftMinterImg,
+    title: "Token Tracker",
+    image: tokenTrackerImg,
     description:
-      "ERC-721 minting application with smart contract deployment, MetaMask wallet integration, and React frontend deployed on Sepolia testnet via Hardhat.",
-    technologies: ["React", "Solidity", "Hardhat", "Ethers.js", "MetaMask"],
-    link: "https://github.com/emam07/NFT-minter",
+      "Gas optimization tool for LLM prompts — a pre-flight analyzer and usage tracker for the Claude API. Scores prompts against 8 waste patterns before they hit the wire, suggests leaner rewrites, and logs every call (tokens, cost, session) to a local SQLite store via a drop-in TrackedClient.",
+    technologies: ["Python", "Claude API", "SQLite", "PyPI", "Click CLI"],
+    link: "https://github.com/emam07/Token-tracker",
   },
 ];
 
